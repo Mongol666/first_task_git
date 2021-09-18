@@ -31,4 +31,8 @@ public class Task {
     public int hashCode() {
         return Objects.hash(first_number, second_number);
     }
+
+    private void setSecond_number(int second_number) {
+        this.second_number = second_number;
+    }
 }
