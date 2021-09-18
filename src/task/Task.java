@@ -17,8 +17,8 @@ public class Task {
         this(first_number);
         this.second_number = second_number;
     }
-    
-	@Override
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -36,8 +36,8 @@ public class Task {
     private void setSecond_number(int second_number) {
         this.second_number = second_number;
 
-    private void setFirst_number(int first_number) {
-        this.first_number = first_number;
-
+        private void setFirst_number ( int first_number){
+            this.first_number = first_number;
+        }
     }
 }
