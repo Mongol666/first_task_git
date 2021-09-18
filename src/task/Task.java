@@ -16,4 +16,11 @@ public class Task {
         this.second_number = second_number;
     }
 
+    @Override
+    public String toString() {
+        return "Task{" +
+                "first_number=" + first_number +
+                ", second_number=" + second_number +
+                '}';
+    }
 }
