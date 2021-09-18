@@ -1,5 +1,7 @@
 package task;
 
+import java.util.Objects;
+
 public class Task {
     private int first_number;
     private int second_number;
@@ -15,5 +17,4 @@ public class Task {
         this(first_number);
         this.second_number = second_number;
     }
-
 }
