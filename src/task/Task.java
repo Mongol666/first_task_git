@@ -1,5 +1,7 @@
 package task;
 
+import java.util.Objects;
+
 public class Task {
     private int first_number;
     private int second_number;
@@ -15,12 +17,18 @@ public class Task {
         this(first_number);
         this.second_number = second_number;
     }
+    
+	@Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Task task = (Task) o;
+        return first_number == task.first_number &&
+                second_number == task.second_number;
+    }
 
     @Override
-    public String toString() {
-        return "Task{" +
-                "first_number=" + first_number +
-                ", second_number=" + second_number +
-                '}';
+    public int hashCode() {
+        return Objects.hash(first_number, second_number);
     }
 }
