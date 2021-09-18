@@ -32,7 +32,12 @@ public class Task {
         return Objects.hash(first_number, second_number);
     }
 
+
     private void setSecond_number(int second_number) {
         this.second_number = second_number;
+
+    private void setFirst_number(int first_number) {
+        this.first_number = first_number;
+
     }
 }
